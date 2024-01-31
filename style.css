@@ -1,53 +1,62 @@
+        /* Page 1 setup*/
+
         /* Resetting default margin and padding */
-        body, h1, h2, p, ul {
+        body,
+        h1,
+        h2,
+        p,
+        ul {
             margin: 0;
             padding: 0;
         }
-        
+
+        .link {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+        }
+
         /* Basic styling */
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
         }
-        
+
         nav ul {
             list-style-type: none;
             background-color: #444;
             text-align: center;
         }
-        
+
         nav ul li {
             display: inline;
             margin-right: 10px;
         }
-        
+
         nav ul li a {
             color: #fff;
             text-decoration: none;
             padding: 5px 10px;
         }
-        
+
         main {
             padding: 20px;
         }
-        
-        footer {
+
+        footer{
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
-        
-        
-        .title{
+
+
+        .title {
             text-align: center;
         }
-        
-        
-        
+
+
+
         .logo-section {
             background-color: #ffffff;
             color: #000000;
@@ -57,82 +66,226 @@
             align-items: center;
             padding: 20px;
         }
-        
+
         .logo-container {
             flex: 1;
             text-align: center;
         }
-        
+
         .logo-container img {
-            max-width: 100px; /* Adjust as needed */
+            max-width: 150px;
+            /* Adjust as needed */
         }
 
         .logo-container h2 {
-            text-align: center; /* Adjust as needed */
+            text-align: center;
+            /* Adjust as needed */
         }
 
         .aboutus {
             text-align: center;
-            margin: 0 20px; /* Adjust as needed */
+            margin: 0;
+            /* Adjust as needed */
         }
-        
-        
-        
+
+
+
         /* New styles for the image section */
         .image-section {
             display: flex;
             justify-content: center;
-            padding: 20px;
+            padding: 0px;
         }
-        
+
         .image-container {
             text-align: center;
-            margin: 0 20px; /* Adjust as needed */
+            margin: 0 20px;
+            /* Adjust as needed */
         }
-        
+
         .image-container img {
-            max-width: 150px; /* Adjust as needed */
+            max-width: 150px;
+            /* Adjust as needed */
             /* border-radius: 50%; */
         }
-        
+
         .image-container p {
             margin-top: 5px;
         }
 
-        .border{
-            border: 1px solid rgb(226, 226, 226);
-            border-radius: 10px;
+        .centered-button {
+            justify-content: center;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .centered-button a {
+            text-decoration: none;
+            background-color: #007bff;
+            padding: 5px 10px;
+            color: #fff;
+            border: 1px solid #007bff;
+            border-radius: 50px;
+        }
+
+        /* New styles for the social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            /* Adjust spacing as needed */
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            /* Adjust icon size as needed */
+            color: #333;
+            /* Adjust icon color as needed */
+        }
+
+        .hero {
+            background-color: #007bff;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+        }
+
+        .courses {
+            padding: 50px 0;
+        }
+
+        .course {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
         }
 
 
-        /* New styles for the button */
-.button-container {
-    text-align: center;
-    margin-top: 20px;
-}
+        @media only screen and (max-width: 600px) {
+            .logo-section {
+                flex-direction: column;
+                align-items: center;
+            }
 
-.centered-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-}
+            .title {
+                text-align: center;
+            }
 
-/* New styles for the social icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
 
-.social-icons a {
-    margin: 0 10px; /* Adjust spacing as needed */
-}
+            .image-section {
+                flex-direction: column;
+                align-items: center;
+            }
 
-.social-icons i {
-    font-size: 24px; /* Adjust icon size as needed */
-    color: #333; /* Adjust icon color as needed */
-}
+            .side-right{
+                flex-direction: column;
+            }
+
+        }
+
+
+
+
+        /* Computer Basics */
+
+        .side-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .sidebar {
+            color: #333;
+            max-width: 150px;
+            padding: 10px;
+        }
+
+        .content {
+            max-width: 800px;
+            padding: 0 100px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+            padding: 0 10px;
+            border: 1px solid #333;
+            border-radius: 50px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ffc107;
+        }
+
+        .q-button a {
+            text-decoration: none;
+            border-radius: 20px;
+            color: #fff;
+            background-color: #000;
+            padding: 5px 10px;
+        }
+
+
+        /* contact */
+
+        .contact-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            height: 120px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }

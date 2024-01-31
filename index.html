@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="tomorrow_vijana.png">
     <title>Tomorrow Vijana Examination</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,34 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
-
-
-<style>
-    /* New styles for responsive design */
-@media only screen and (max-width: 600px) {
-    .logo-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .title{
-        text-align: center;
-    }
-
-
-    .image-section {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-</style>
-
-
 </head>
 
 <body>
-
+    <!-- header -->
     <header class="logo-section">
         <div class="logo-container">
             <img src="Images/tomorrowvijana.png">
@@ -49,61 +26,73 @@
         </div>
     </header>
 
+    <!-- navigation menu -->
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-
-
+    <!-- text after the menu -->
     <main>
         <article class="aboutus">
-            <h2>About Us</h2>
-            <p>This is a simple website created using HTML and CSS.</p>
+            <h2>Objective</h2>
+            <p>At Tomorrow Vijana, we understand the importance of education in transforming communities and changing lives. Our goal is to equip our students with the skills they need to pursue rewarding careers, become self-sufficient, and contribute positively to their communities.</p>
         </article>
     </main>
 
-
-
+    <!-- courses -->
     <section class="image-section">
-        <div class="image-container">
-            <img src="Images/computerbasics.png">
-            <p>Computer Basics</p>
-        </div>
-        <div class="image-container">
-            <img src="Images/windowsos.png">
-            <p>Windows OS</p>
-        </div>
-        <div class="image-container">
-            <img src="Images/microsoftword.png">
-            <p>Microsoft Word</p>
-        </div>
-        <div class="image-container">
-            <img src="Images/microsoftexcel.png">
-            <p>Microsoft Excel</p>
-        </div>
-        <div class="image-container">
-            <img src="Images/microsoftpowerpoint.png">
-            <p>Microsoft PowerPoint</p>
-        </div>
+        <a href="com-bas.html" class="link">
+            <div class="image-container">
+                <img src="Images/computerbasics.png">
+                <p>Computer Basics</p>
+            </div>
+        </a>
+        <a href="win-os.html" class="link">
+            <div class="image-container">
+                <img src="Images/windowsos.png">
+                <p>Windows OS</p>
+            </div>
+        </a>
+        <a href="ms-word.html" class="link">
+            <div class="image-container">
+                <img src="Images/microsoftword.png">
+                <p>Microsoft Word</p>
+            </div>
+        </a>
+        <a href="ms-excel.html" class="link">
+            <div class="image-container">
+                <img src="Images/microsoftexcel.png">
+                <p>Microsoft Excel</p>
+            </div>
+        </a>
+        <a href="ms-powerpoint.html" class="link">
+            <div class="image-container">
+                <img src="Images/microsoftpowerpoint.png">
+                <p>Microsoft PowerPoint</p>
+            </div>
+        </a>
     </section>
-
+<!-- button container  -->
+        <div class="centered-button">
+            <a href="com-bas.html">Take an assessment</a>
+        </div>
+    <!-- social icons -->
     <div class="social-icons">
-        <a href="#"><i class='bx bxl-linkedin'></i></a>
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bxl-youtube'></i></a>
-        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.linkedin.com/company/tomorrowvijana/"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.facebook.com/1800618190165319"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/tomorrowvijana/"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.youtube.com/@TomorrowVijana"><i class='bx bxl-youtube'></i></a>
+        <a href="https://wa.me/+256785468302"><i class='bx bxl-whatsapp'></i></a>
     </div>
 
-    <div class="button-container">
-        <button class="centered-button">Take an assessment</button>
-    </div>
+    
 
+    <!-- footer contents -->
     <footer>
         <p>&copy; 2024 Developed with love by JoshTeck</p>
     </footer>
